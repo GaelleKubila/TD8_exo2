@@ -4,6 +4,11 @@ namespace Armstrong
 {
     class Program
     {
+        // Rôle : Indique si un nombre donné est un nombre d'Armstrong.
+        // Paramètres d'entrée :
+        // - nombre : nombre à tester (en entrée pure).
+        // Valeur de sortie : true si c'est un nb d'Armstrong, false sinon.
+
         static bool NombreArmstrong(int nb) {
 
             if (((nb/100)<1) || (nb/100)>=10) {
@@ -43,7 +48,7 @@ namespace Armstrong
 
             try {
 
-            Convert.ToInt32(Console.ReadLine(Nombre));
+            Nombre = Convert.ToInt32(Console.ReadLine());
 
             }
 
@@ -53,7 +58,8 @@ namespace Armstrong
                 return;
             }
 
-            Console.Writeline(Armstrong(Nombre));
+            Console.Writeline(NombreArmstrong(Nombre));
         }
     }
 }
+
