@@ -38,7 +38,22 @@ namespace Armstrong
 
         static void Main(string[] args)
         {
-            Console.WriteLine(Armstrong(370));
+
+            int Nombre;
+
+            try {
+
+            Convert.ToInt32(Console.ReadLine(Nombre));
+
+            }
+
+            catch(Exception e) {
+
+                Console.WriteLine("e.Message");
+                return;
+            }
+
+            Console.Writeline(Armstrong(Nombre));
         }
     }
 }
